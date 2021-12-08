@@ -11,7 +11,7 @@ import SwiftUI
 struct List_CatsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView(viewModel: .init())
+            MainListView(viewModel: .init())
         }
     }
 }

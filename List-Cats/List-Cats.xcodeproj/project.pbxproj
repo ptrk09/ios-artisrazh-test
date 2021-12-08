@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2C41F67C2760D96300310645 /* List_CatsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C41F67B2760D96300310645 /* List_CatsApp.swift */; };
-		2C41F67E2760D96300310645 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C41F67D2760D96300310645 /* ContentView.swift */; };
+		2C41F67E2760D96300310645 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C41F67D2760D96300310645 /* ListView.swift */; };
 		2C41F6802760D96800310645 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C41F67F2760D96800310645 /* Assets.xcassets */; };
 		2C41F6832760D96800310645 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C41F6822760D96800310645 /* Preview Assets.xcassets */; };
 		2C41F68D2760D96800310645 /* List_CatsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C41F68C2760D96800310645 /* List_CatsTests.swift */; };
@@ -49,7 +49,7 @@
 /* Begin PBXFileReference section */
 		2C41F6782760D96300310645 /* List-Cats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "List-Cats.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C41F67B2760D96300310645 /* List_CatsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List_CatsApp.swift; sourceTree = "<group>"; };
-		2C41F67D2760D96300310645 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2C41F67D2760D96300310645 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		2C41F67F2760D96800310645 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C41F6822760D96800310645 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2C41F6882760D96800310645 /* List-CatsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "List-CatsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,7 +127,6 @@
 				2C41F6A72760D9FA00310645 /* SupportFiles */,
 				2C41F6A62760D9DE00310645 /* DetailCat */,
 				2C41F6A52760D99D00310645 /* Cats */,
-				2C41F67D2760D96300310645 /* ContentView.swift */,
 			);
 			path = "List-Cats";
 			sourceTree = "<group>";
@@ -197,6 +196,7 @@
 		2C41F6A92760E36600310645 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2C41F67D2760D96300310645 /* ListView.swift */,
 				2C41F6AC2760E3A300310645 /* Cell */,
 			);
 			path = View;
@@ -434,7 +434,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C41F6AE2760E3B500310645 /* CatCell.swift in Sources */,
-				2C41F67E2760D96300310645 /* ContentView.swift in Sources */,
+				2C41F67E2760D96300310645 /* ListView.swift in Sources */,
 				2C41F6D327616E4300310645 /* TextConstants.swift in Sources */,
 				2C41F6D12761690800310645 /* ProtocolDetail.swift in Sources */,
 				2C41F6BF2761411B00310645 /* Protocols.swift in Sources */,
