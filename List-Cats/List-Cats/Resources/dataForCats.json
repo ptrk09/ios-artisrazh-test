@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "imageName": "cat0"
+    },
+    {
+        "id": 2,
+        "imageName": "cat1"
+    },
+    {
+        "id": 3,
+        "imageName": "cat2"
+    },
+    {
+        "id": 4,
+        "imageName": "cat3"
+    },
+    {
+        "id": 5,
+        "imageName": "cat4"
+    }
+]

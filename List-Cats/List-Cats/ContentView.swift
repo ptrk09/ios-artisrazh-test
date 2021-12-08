@@ -8,14 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let viewModel: ViewModelCats
+    
     var body: some View {
-        Text("Hello, cats!")
-            .padding()
+        NavigationView{
+            ScrollView(.vertical) {
+                ForEach((0..<viewModel.getCountCats())) { index in
+                    CatCell(
+                        viewModel: viewModel, index: index
+                    )
+                }
+                .frame(maxWidth: .infinity)
+            }
+            .navigationTitle(viewModel.titleNavBar)
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        
+        ContentView(
+            viewModel: .init()
+        )
     }
 }
