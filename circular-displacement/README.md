@@ -35,3 +35,5 @@ Space Complexity: O(N)
 2. newArray[(index + K) % N] = oldArray[index] (где oldArray - первоначальный масиив)
 3. oldArray = newArray
 
+![rotate2](https://user-images.githubusercontent.com/48867712/145582133-6222bb9a-3462-46dd-8057-14e7a08a0e3e.png)
+
