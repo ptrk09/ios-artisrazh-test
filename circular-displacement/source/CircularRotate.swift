@@ -19,14 +19,11 @@ func circularRotateWithReverse(arrayForRotate array: inout [Int], _ countRotate:
             indexFin > -1 && indexFin < array.count  else  {
             return
         }
-
-        //print("RRRRR")
         
         var startIndex = indexStart
         var finIndex = indexFin
 
         while startIndex < finIndex {
-            //print("array[startIndex]: \(array[startIndex]), array[finIndex]: \(array[finIndex])")
             let temp = array[startIndex]
             array[startIndex] = array[finIndex]
             array[finIndex] = temp
