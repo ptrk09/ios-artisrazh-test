@@ -19,3 +19,19 @@ Space Complexity: O(1)
 3. Перевернуть массив начиная с К + 1 элемента (K индекс) по последний элемент (N - 1 индекс).
 
 <img width="500" alt="rotate1" src="https://user-images.githubusercontent.com/48867712/145580043-57e9c102-c4ee-4b5f-9bbf-19f0df63556d.png">
+
+
+### circularRotateWithExtraArray
+Time Complexity: O(N)
+Space Complexity: O(N)
+
+Функция circularRotateWithExtraArray реализует циклический сдвиг массива путём создания нового массива и добавление элементов в необходимые ячейки.
+
+Алгоритм:
+Пусть K - заданное число сдвигов; N - длина массива.
+
+Необходимо:
+1. Создать новый массив (newArray)
+2. newArray[(index + K) % N] = oldArray[index] (где oldArray - первоначальный масиив)
+3. oldArray = newArray
+
