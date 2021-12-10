@@ -19,11 +19,14 @@ func circularRotateWithReverse(arrayForRotate array: inout [Int], _ countRotate:
             indexFin > -1 && indexFin < array.count  else  {
             return
         }
+
+        //print("RRRRR")
         
         var startIndex = indexStart
         var finIndex = indexFin
 
         while startIndex < finIndex {
+            //print("array[startIndex]: \(array[startIndex]), array[finIndex]: \(array[finIndex])")
             let temp = array[startIndex]
             array[startIndex] = array[finIndex]
             array[finIndex] = temp
@@ -33,8 +36,7 @@ func circularRotateWithReverse(arrayForRotate array: inout [Int], _ countRotate:
     }
     
 
-    guard array.count > 1 && array.count < 106 &&
-        countRotate > 0 && countRotate < 106 else {
+    guard array.count > 1 && countRotate > 0 else {
         return
     }
 
@@ -47,7 +49,7 @@ func circularRotateWithReverse(arrayForRotate array: inout [Int], _ countRotate:
     reverseArray(
         arrayForReverse: &array,
         indexStart: 0,
-        indexFin: countRotate % array.count
+        indexFin: countRotate % array.count - 1
     )
     
     reverseArray(
@@ -74,14 +76,13 @@ func circularRotateWithReverse(arrayForRotate array: inout [Int], _ countRotate:
 */
 
 func circularRotateArray(arrayForRotate array: inout [Int], _ countRotate: Int) -> Void {
-    guard array.count > 1 && array.count < 106 &&
-        countRotate > 0 && countRotate < 106 else {
+    guard array.count > 1 && countRotate > 0 else {
         return
     }
 
     for _ in 1 ... countRotate {
         let lastValue = array[array.count - 1]
-        
+
         for indexElement in stride(from: array.count - 1, to: 0, by: -1) {
             array[indexElement] = array[indexElement - 1]
         }
@@ -109,8 +110,7 @@ func circularRotateArray(arrayForRotate array: inout [Int], _ countRotate: Int) 
 */
 
 func circularRotateWithExtraArray(arrayForRotate array: inout [Int], _ countRotate: Int) -> Void {
-    guard array.count > 1 && array.count < 106 &&
-        countRotate > 0 && countRotate < 106 else {
+    guard array.count > 1 && countRotate > 0 else {
         return
     }
 
