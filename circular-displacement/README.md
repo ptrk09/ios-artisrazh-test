@@ -39,7 +39,7 @@ Space Complexity: O(N)
 2. newArray[(index + K) % N] = oldArray[index] (где oldArray - первоначальный масиив)
 3. oldArray = newArray
 
-<img width="500" alt="rotate1" src="https://user-images.githubusercontent.com/48867712/145582133-6222bb9a-3462-46dd-8057-14e7a08a0e3e.png">
+<img width="500" alt="rotate2" src="https://user-images.githubusercontent.com/48867712/145582133-6222bb9a-3462-46dd-8057-14e7a08a0e3e.png">
 
 
 ### circularRotateArray
@@ -58,3 +58,6 @@ Space Complexity: O(1)
 1. Повторить К раз пункт 2 и 3
 2. Сдинуть элементы массива, начиная с первого по предпослений вправо на один
 3. Первый элемент полученного массива заменить на последний элемент первоначального массива
+
+<img width="500" alt="rotate3" src="https://user-images.githubusercontent.com/48867712/145583847-62bd0c7c-67a4-425a-aea9-c19ba3675428.png">
+
